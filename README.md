@@ -111,3 +111,16 @@ Follow the steps below to set up the project locally.
 1) Kaggle for providing the Potato Leaf Disease Dataset.
 2) TensorFlow and Keras development teams.
 3) Open-source Python community.
+
+## Screenshots
+
+### Prediction Page
+![Prediction1](screenshots/Prediction1.jpeg)
+![Prediction2](screenshots/Prediction2.jpeg)
+![Prediction3](screenshots/Prediction3.jpeg)
+
+### Dashboard Page
+![Dashboard1](screenshots/Dashboard1.jpeg)
+![Dashboard2](screenshots/Dashboard2.jpeg)
+![Dashboard3](screenshots/Dashboard3.jpeg)
+![Dashboard4](screenshots/Dashboard4.jpeg)
