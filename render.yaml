@@ -1,12 +1,14 @@
 services:
-- type: web
-  name: potato-disease-classification
-  runtime: python
-  plan: free
+  - type: web
+    name: potato-disease-classification
+    runtime: python
+    plan: free
 
-  buildCommand: pip install -r requirements.txt
-  startCommand: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
-  envVars:
-    key:
-      PYTHON_VERSION value: 3.12
-  autoDeploy: true
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
+
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12
+
+    autoDeploy: true
