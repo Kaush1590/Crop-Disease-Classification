@@ -25,7 +25,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("Dashboard")
+st.title("🗃️ Dashboard")
 
 # Load model artifacts and evaluation data
 
@@ -61,10 +61,10 @@ f1 = f1_score(
 
 tab1, tab2, tab3, tab4 = st.tabs(
     [
-        "📊 Overview",
-        "📈 Training",
-        "🧩 Confusion Matrix",
-        "⚙️ Dataset Info"
+        "Overview",
+        "Training",
+        "Confusion Matrix",
+        "Dataset Info"
     ]
 )
 
@@ -124,7 +124,7 @@ with tab1:
 
     st.plotly_chart(
         fig_pred,
-        use_container_width=True
+        width="stretch"
     )
 
 # Analyze training performance
@@ -250,7 +250,7 @@ with tab2:
 
         st.plotly_chart(
             fig_acc,
-            use_container_width=True
+            width="stretch"
         )
 
     with chart_col2:
@@ -287,7 +287,7 @@ with tab2:
 
         st.plotly_chart(
             fig_loss,
-            use_container_width=True
+            width="stretch"
         )
 
     st.divider()
@@ -355,7 +355,7 @@ with tab2:
 
     st.dataframe(
         epoch_df,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
@@ -372,7 +372,7 @@ with tab3:
 
     st.dataframe(
         report_df,
-        use_container_width=True
+        width="stretch"
     )
 
     st.subheader("Confusion Matrix")
@@ -399,7 +399,7 @@ with tab3:
 
     st.plotly_chart(
         fig_cm,
-        use_container_width=True
+        width="stretch"
     )
 
 # Display dataset and project details
@@ -490,7 +490,7 @@ with tab4:
 
         st.plotly_chart(
             fig_pie,
-            use_container_width=True
+            width="stretch"
         )
 
     with col2:
