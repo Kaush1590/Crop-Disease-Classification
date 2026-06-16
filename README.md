@@ -71,5 +71,43 @@ Follow the steps below to set up the project locally.
 ### 1) Clone the repository
 
 ```bash
-  git clone 
+  git clone https://github.com/Kaush1590/Crop-Disease-Classification.git
+  cd Crop-Disease-Classification
 ```
+### 2) Create and activate a virtual environment
+
+#### Linux/ MacOS
+```bash
+  python -m venv <environment_name>
+  source <environment_name>/bin/activate
+```
+
+#### Windows
+```bash
+  python -m venv <environment_name>
+  <environment_name>\Scripts\activate
+```
+
+#### Anaconda
+```bash
+  conda create -n <environment_name> python=3.12 -y
+  conda activate <environment_name>
+```
+
+### 3) Install required dependencies
+```bash
+  pip install -r requirements.txt
+```
+
+### 4) Run the application
+
+```bash
+  streamlit run app.py
+```
+
+### Once started, open the URL displayed in the terminal to access the application.
+
+## Acknowledgment
+1) Kaggle for providing the Potato Leaf Disease Dataset.
+2) TensorFlow and Keras development teams.
+3) Open-source Python community.
