@@ -1,6 +1,7 @@
 .vscode
 .venv
 data/
+best_model.keras
 best_model_finetuned.keras
 __pycache__/
 test.ipynb
